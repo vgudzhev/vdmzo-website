@@ -86,8 +86,8 @@
       return;
     }
 
-    const subject = `[vdmzo] ${data.topic} enquiry from ${data.name}`;
-    const body = `Name: ${data.name}\nEmail: ${data.email}\nCompany: ${data.company || '-'}\nTopic: ${data.topic}\n\n${data.message}`;
+    const subject = `[vdmzo] Enquiry from ${data.name}`;
+    const body = `Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`;
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     note.textContent = 'Opening your email client…';
   });
