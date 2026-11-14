@@ -4,9 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page not found — vdmzo</title>
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <!-- Resolve assets from the site root, whether served at vdmzo.com/ or <user>.github.io/<repo>/ -->
+  <script>document.write('<base href="' + (location.hostname.endsWith('github.io') ? '/' + location.pathname.split('/')[1] + '/' : '/') + '">');</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main class="hero">
@@ -16,7 +18,7 @@
       <p class="eyebrow">404</p>
       <h1>This route isn't <span class="accent">integrated</span> yet.</h1>
       <p class="lead">The page you're looking for doesn't exist or has moved.</p>
-      <div class="hero-cta"><a href="/" class="btn btn-primary">Back to home</a></div>
+      <div class="hero-cta"><a href="./" class="btn btn-primary">Back to home</a></div>
     </div>
   </main>
 </body>
